@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import SearchForm from './SearchForm';
+import LocationAndDate from './LocationAndDate';
+import CurrentTemperature from './CurrentTemperature'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <SearchForm />
+        <div className="row">
+            <div className="col-7 float-left">
+              <CurrentTemperature />
+            </div>
+            <div className="col-5 text-right">
+              <LocationAndDate />
+            </div>
+          </div>
+          <span className="open-source-link">
+          <a
+            href="https://github.com/mhthomas3/vanilla-weather-app"
+            target="_blank" rel = "noreferrer"
+          >
+            Open-source code
+          </a>{" "}
+          by Morgan Thomas
+        </span>
+      </div>
     </div>
   );
 }

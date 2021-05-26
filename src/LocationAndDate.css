@@ -1,0 +1,13 @@
+.city {
+    font-size: 22pt;
+  }
+  
+  day-time,
+  .current-weather-descrip {
+    font-size: 10pt;
+  }
+  
+  .current-weather-descrip::first-letter {
+    text-transform: capitalize;
+  }
+  
