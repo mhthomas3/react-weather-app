@@ -3,15 +3,15 @@ import "./CurrentTemperature.css";
 
 export default function CurrentTemperature() {
   return (
-    <div className="CurrentTemperature float-left">
+    <div className="CurrentTemperature float-start">
         <img
             src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
             alt="partly cloudy"
-            className="src emoji float-left"
+            className="src emoji"
             id="icon"
         />
-        <div className="temperature float-left">42</div>
-        <span className="units float-left">
+        <span className="temperature mx-2">42</span>
+        <span className="units">
             {" "}
             <a href="/" className="active">
             °F
@@ -19,7 +19,7 @@ export default function CurrentTemperature() {
             | <a href="/"> °C</a>
         </span>
         <br />
-        <ul className="weather-stats float-left">
+        <ul className="weather-stats ml-4">
             <li>
             Humidity: <span>60</span>%
             </li>

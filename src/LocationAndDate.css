@@ -6,8 +6,13 @@
   .current-weather-descrip {
     font-size: 10pt;
   }
+
+  ul{
+    padding:0px;
+  }
   
   .current-weather-descrip::first-letter {
     text-transform: capitalize;
   }
+  
   

@@ -9,13 +9,15 @@ function App() {
     <div className="App">
       <div className="container">
         <SearchForm />
-        <div className="row">
-            <div className="col-7 float-left">
-              <CurrentTemperature />
-            </div>
-            <div className="col-5 text-right">
-              <LocationAndDate />
-            </div>
+        <div className="container">
+          <div className="row">
+              <div className="col-7 float-start">
+                <CurrentTemperature />
+              </div>
+              <div className="col-5">
+                <LocationAndDate />
+              </div>
+          </div>
         </div>
           <span className="open-source-link">
           <a
